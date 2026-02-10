@@ -64,7 +64,6 @@ FROM duplicates
 WHERE row_num > 1;
 
 
-
 CREATE TEMP TABLE covid_combined AS
 SELECT Province_State, MIN(first_case_date) AS first_date
 FROM covid
